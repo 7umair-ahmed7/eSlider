@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(148, 226, 148);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(148, 226, 148);
+    color: white;
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.container .image-container {
+    display: flex;
+    align-items: center;
+}
+.container .image-container .main-image-container{
+    display: flex;
+    gap: 5px;
+    width: 405px;
+    overflow: hidden;
+    padding: 5px;
+}
+.container .image-container .main-image-container .main-image {
+    width: 400px;
+    transform: translateX(-405px);
+
+}
+
+
+
+.container .image-container .right-arrow img,
+.container .image-container .left-arrow img {
+    width: 30px;
+    cursor: pointer;
+ 
+
+}
+
+.container .dots {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.container .dots .dot {
+    cursor: pointer;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+
+.container .dots .dot.selected {
+    background-color: black;
+}
